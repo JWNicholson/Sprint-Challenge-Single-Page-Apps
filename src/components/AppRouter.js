@@ -16,10 +16,9 @@ export default function AppRouter() {
             </li>
           </ul>
         </nav>
-           <Switch>
-        <Route path="/characters" component={CharacterList} />
-        <Route path="/" component={WelcomePage} />
-      </Switch>
+        <Route exact path="/" component={WelcomePage} />
+      <Route path="/characters" component={CharacterList} />
+     
       </div>
     );
   }

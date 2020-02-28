@@ -1,24 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function SearchForm(props) {
-  const [query, setQuery] = useState("");
-  const handleInputChange = event => {
-    setQuery(event.target.value);
-  };
   return (
-    <section className="search-form">
-     <form className="search">
-        <input
-          type="text"
-          onChange={handleInputChange}
-          value={query}
-          name="name"
-          tabIndex="0"
-          className="prompt search-name"
-          placeholder="search for name"
-          autoComplete="off"
-        />
-      </form>
-    </section>
+    <div className="searhbox">
+      <input
+      className="searchInput"
+        onChange={props.handleChange}
+        type="text"
+        name="search"
+        placeholder="Search for Name"
+        name="name"
+        autoComplete="off"
+      />
+    </div>
   );
 }
