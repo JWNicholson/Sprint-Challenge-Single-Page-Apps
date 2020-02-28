@@ -9,8 +9,8 @@ export default function CharacterList() {
   useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-      //axios
-        get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/")
+      axios
+        .get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/")
           .then(response => {
             console.log("Response - ", response.data.results);
             setCharacters(response.data.results);
