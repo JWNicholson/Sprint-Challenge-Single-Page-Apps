@@ -4,10 +4,12 @@ import WelcomePage from "./WelcomePage";
 import CharacterList from "./CharacterList";
 
 export default function AppRouter() {
-    <div>
+    return (
+      <div className="page-view ui bottom attached segment active tab">
         <Switch>
-        <Route path="/characters" component={CharacterList} />
-        <Route component={WelcomePage} />
+          <Route path="/characters" component={CharacterList} />
+          <Route component={WelcomePage} />
         </Switch>
-    </div>
-}
+      </div>
+    );
+  }
