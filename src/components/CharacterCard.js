@@ -7,9 +7,10 @@ export default function CharacterCard(props) {
       {characterData.map(character => {
         return (
           <div className="characterWrapper">
-           
-            <h1>{character.name}</h1>
-            
+            <h1>Name-  {character.name}</h1>
+            <img src={character.image} />
+            <p>Status - {character.status}</p>
+            <p>Species - {character.species}</p>
           </div>
         );
       })}
