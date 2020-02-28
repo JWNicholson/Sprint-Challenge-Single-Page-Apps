@@ -13,7 +13,7 @@ export default function CharacterList() {
   };
 
   useEffect(() => {
-    Axios.get("https://rickandmortyapi.com/api/character/")
+    Axios.get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/")
       .then(res => {
         console.log(res.data);
         const character = res.data.results.filter(a =>
