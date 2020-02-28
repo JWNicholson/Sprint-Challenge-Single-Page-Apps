@@ -1,51 +1,25 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components"
 
-const CharacterWrapper = styled.div`
-  width:380px;
-  margin-bottom:48px;
+const CardWrapper = styled.div`
   border:1px solid grey;
-  border-radius:8px;
-  text-align:center;
-  background-color:ghostwhite;
-  -webkit-box-shadow: -2px 8px 8px -4px rgba(0,0,0,0.54); 
-box-shadow: -2px 8px 8px -4px rgba(0,0,0,0.54);
+  border-radius: 8px;
+  margin: 24px auto;
+  width: 360px;
+  padding:18px;
+  text-align:left;
+  color:darkslategrey;
+  background: ghostwhite;
+  -webkit-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.36); 
+   box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.36);
 `;
 
-const CharacterImage = styled.img`
-  border:1px solid grey;
-  border-radius:4px;
-`;
-
-export default function CharacterCard(props) {
-  const characterData = props.characterData;
-  return (
-    <>
-      {characterData.map(character => {
-        return (
-          <CharacterWrapper>
-            <h1>Name-  {character.name}</h1>
-            <CharacterImage src={character.image} />
-            <p>Status - {character.status}</p>
-            <p>Species - {character.species}</p>
-          </CharacterWrapper>
-        );
-      })}
-    </>
-  );
-  // const characterData = props.data;
-  // return (
-  //     <>
-  //       {characterData.map(data => {
-  //         return (
-  //           <div>
-  //             <h1>Name-  {data.name}</h1>
-  //             <img src={data.image} />
-  //             <p>Status - {data.status}</p>
-  //             <p>Species - {data.species}</p>
-  //           </div>
-  //         );
-  //       })}
-  //     </>
-  //   );
-}
+ export default function CharacterCard(props) {
+   return(
+     <CardWrapper>
+      <h2>Name: {props.name}</h2>
+      <p>Status: {props.status}</p>
+      <p>Species: {props.species}</p>
+     </CardWrapper>
+   );
+ }
