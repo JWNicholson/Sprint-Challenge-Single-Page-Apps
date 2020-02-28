@@ -4,6 +4,12 @@ body {
   font-family: sans-serif;
 }
 
+a{
+  color:white;
+  margin:12px;
+  text-decoration: none;
+}
+
 main {
   width: 85vw;
   min-height: 80vh;
