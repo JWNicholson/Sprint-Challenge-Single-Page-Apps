@@ -33,4 +33,19 @@ export default function CharacterCard(props) {
       })}
     </>
   );
+  // const characterData = props.data;
+  // return (
+  //     <>
+  //       {characterData.map(data => {
+  //         return (
+  //           <div>
+  //             <h1>Name-  {data.name}</h1>
+  //             <img src={data.image} />
+  //             <p>Status - {data.status}</p>
+  //             <p>Species - {data.species}</p>
+  //           </div>
+  //         );
+  //       })}
+  //     </>
+  //   );
 }
