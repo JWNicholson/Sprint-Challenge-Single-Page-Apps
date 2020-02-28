@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./components/Header.js";
-import CharacterList from "./components/CharacterList";
+// import CharacterList from "./components/CharacterList";
 import AppRouter from "./components/AppRouter.js";
 
 
@@ -9,7 +9,7 @@ export default function App() {
     <main>
       <Header />
       <AppRouter />
-      <CharacterList />
+      {/* <CharacterList /> */}
     </main>
   );
 }

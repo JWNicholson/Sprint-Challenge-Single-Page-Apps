@@ -12,6 +12,11 @@ const CharacterWrapper = styled.div`
 box-shadow: -2px 8px 8px -4px rgba(0,0,0,0.54);
 `;
 
+const CharacterImage = styled.img`
+  border:1px solid grey;
+  border-radius:4px;
+`;
+
 export default function CharacterCard(props) {
   const characterData = props.characterData;
   return (
@@ -20,7 +25,7 @@ export default function CharacterCard(props) {
         return (
           <CharacterWrapper>
             <h1>Name-  {character.name}</h1>
-            <img src={character.image} />
+            <CharacterImage src={character.image} />
             <p>Status - {character.status}</p>
             <p>Species - {character.species}</p>
           </CharacterWrapper>
