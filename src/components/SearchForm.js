@@ -1,8 +1,13 @@
 import React from "react";
+import styled from "styled-components";
+
+const SearchBox = styled.div`
+    margin:24px;
+`;
 
 export default function SearchForm(props) {
   return (
-    <div className="searhbox">
+    <SearchBox>
       <input
       className="searchInput"
         onChange={props.handleChange}
@@ -12,6 +17,6 @@ export default function SearchForm(props) {
         name="name"
         autoComplete="off"
       />
-    </div>
+    </SearchBox>
   );
 }
