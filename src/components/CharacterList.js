@@ -15,12 +15,12 @@ export default function CharacterList() {
   useEffect(() => {
     Axios.get("https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/")
       .then(res => {
-        console.log(res.data);
+        // console.log(res.data);
         const character = res.data.results.filter(a =>
           a.name.toLowerCase().includes(query.toLowerCase())
         );
         setCharacters(character);
-        console.log(character);
+        // console.log(character);
       })
       .catch(err => console.log(err.response));
   }, [query]);

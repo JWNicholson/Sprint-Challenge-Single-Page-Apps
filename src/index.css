@@ -11,6 +11,10 @@ a{
   text-decoration: none;
 }
 
+.activeLink{
+  color:orangered;
+}
+
 main {
   width: 85vw;
   min-height: 80vh;

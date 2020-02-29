@@ -4,7 +4,6 @@ import { Route } from "react-router-dom";
 import WelcomePage from "./components/WelcomePage";
 import CharacterList from "./components/CharacterList";
 
-
 export default function App() {
   return (
     <main>
@@ -22,8 +21,6 @@ export default function App() {
           return <CharacterList {...props} />;
         }}
       ></Route>
-      
-
     </main>
   );
 }
