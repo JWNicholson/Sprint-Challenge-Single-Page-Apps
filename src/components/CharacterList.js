@@ -15,7 +15,7 @@ export default function CharacterList() {
   useEffect(() => {
     Axios.get("https://rickandmortyapi.com/api/character/")
       .then(res => {
-        console.log(res.data);
+        console.log("Response from axios: ",res.data);
         const character = res.data.results.filter(a =>
           a.name.toLowerCase().includes(query.toLowerCase())
         );
@@ -33,6 +33,7 @@ export default function CharacterList() {
           return (
             <CharacterCard
               name={c.name}
+              image={c.image}
               status={c.status}
               species={c.species}
             />
