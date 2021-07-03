@@ -28,6 +28,10 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [ ]  Explain benefit(s) using `client-side routing`?
 
 > Answer:
+Traditionally, every time their is a click or change in URL, a new request to a server is made. This downloads everything on the page again. 
+Client side routing gives control of the site's URL & content without relying on a server to send the content.
+The data is already there, so javascript loads what you need, without having to refresh the page. That
+makes the site faster, and works better on lower bandwidth connections.
 
 ## Project Set Up
 
